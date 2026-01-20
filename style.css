@@ -1,0 +1,12 @@
+header {
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    color: white;
+    height: 8vh;
+    position: sticky;
+    top: 0;
+}
