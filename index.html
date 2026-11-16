@@ -1,22 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simone Smiles</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <!-- Serve per vedere bene il sito da telefono -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home - Sito personale</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="sx">logo</div>
-        <div class="dx">
-            <button>home</button>
-            <button>pagina 1</button>
-            <button>pagina 2</button>
-            <button>pagina 3</button>
-        </div>
-    </header>
-    
-    <script src="./script.js"></script>
+
+  <!-- MENU (uguale in tutte le pagine) -->
+  <header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="stage.html">Stage</a>
+    <a href="extra.html">Extra</a>
+    <a href="gioco.html">Gioco</a>
+  </nav>
+</header>
+
+  <main>
+    <!-- Messaggio mostrato solo se il caricamento del foglio fallisce -->
+    <p id="messaggio-errore" hidden></p>
+
+    <!-- Riga "presentazione" del foglio -->
+    <section id="presentazione">
+      <img id="foto" alt="Foto personale">
+      <div>
+        <h1 id="nome"></h1>
+        <h2 id="qualifica"></h2>
+        <p id="testo"></p>
+      </div>
+    </section>
+
+    <!-- Righe "passione" del foglio: le card le crea JavaScript -->
+        <!-- Righe "passione" del foglio: le card le crea JavaScript -->
+    <section id="sezione-passioni">
+      <h2>Passioni</h2>
+      <div id="lista-passioni"></div>
+    </section>
+
+    <!-- Righe "competenza" del foglio: le barre le crea JavaScript -->
+    <section id="sezione-competenze">
+      <h2>Cosa so fare</h2>
+      <div id="lista-competenze"></div>
+    </section>
+  </main>
+
+  <!-- FOOTER (uguale in tutte le pagine) -->
+  <footer>
+    <div>
+      <p>Indirizzo: ...</p>
+      <p>Email: ...</p>
+      <p>Cellulare: ...</p>
+    </div>
+    <img src="img/scuola.jpg" alt="Logo Immaginazione e Lavoro">
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
